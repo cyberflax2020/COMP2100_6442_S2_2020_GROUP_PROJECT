@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProCom Search</string>
+    <string name="title_activity_select">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="database_name">Users.db</string>
+    <string name="SerachHint"><![CDATA[Use the default auto input button below to find the most valuable companies.\n\nOr type in a query made up with stock attributes, searching operators ("<", "+", ">") and logical operators. ("&", "|", "!", "(", ")").\n\nUse the keyboard button at the left top corner for fast inputting attributes.\n\nUse the rank button on the right top corner to sort the results.]]></string>
+
+</resources>

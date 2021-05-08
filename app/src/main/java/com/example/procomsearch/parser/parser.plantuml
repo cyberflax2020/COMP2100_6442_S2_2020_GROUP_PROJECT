@@ -1,0 +1,185 @@
+@startuml
+
+title __PARSER's Class Diagram__\n
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.And_Exp {
+          + And_Exp()
+          + evaluate()
+          + getType()
+          + show()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Attribute_Exp {
+          - attribute : String
+          + Attribute_Exp()
+          + evaluate()
+          + getType()
+          + show()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Bigger_Exp {
+          - type : String
+          + Bigger_Exp()
+          + evaluate()
+          + getType()
+          + show()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Dou_Exp {
+          - value : Double
+          + Dou_Exp()
+          + evaluate()
+          + getType()
+          + show()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Equal_Exp {
+          - type : String
+          + Equal_Exp()
+          + evaluate()
+          + getType()
+          + show()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      abstract class com.example.procomsearch.parser.Exp {
+          {abstract} + evaluate()
+          {abstract} + getType()
+          {abstract} + show()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.NotExp {
+          + NotExp()
+          + evaluate()
+          + getType()
+          + show()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.OrExp {
+          + OrExp()
+          + evaluate()
+          + getType()
+          + show()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Parser {
+          + Exp1()
+          + LogicalExp1()
+          + LogicalExp2()
+          + LogicalExp3()
+          + Parser()
+          + Search_rst()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Smaller_Exp {
+          - type : String
+          + Smaller_Exp()
+          + evaluate()
+          + getType()
+          + show()
+          + toString()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.UnknownRst {
+          {static} - rst : ArrayList<Company_Index>
+          {static} + getRst()
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Unknown_Exp {
+          + evaluate()
+          + getType()
+          + show()
+      }
+    }
+  }
+  
+
+  com.example.procomsearch.parser.And_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.And_Exp o-- com.example.procomsearch.parser.Exp : exp
+  com.example.procomsearch.parser.And_Exp o-- com.example.procomsearch.parser.Exp : term
+  com.example.procomsearch.parser.Attribute_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Bigger_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Bigger_Exp o-- com.example.procomsearch.parser.Exp : Dou
+  com.example.procomsearch.parser.Bigger_Exp o-- com.example.procomsearch.parser.Exp : term
+  com.example.procomsearch.parser.Dou_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Equal_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Equal_Exp o-- com.example.procomsearch.parser.Exp : Dou
+  com.example.procomsearch.parser.Equal_Exp o-- com.example.procomsearch.parser.Exp : term
+  com.example.procomsearch.parser.NotExp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.NotExp o-- com.example.procomsearch.parser.Exp : exp
+  com.example.procomsearch.parser.OrExp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.OrExp o-- com.example.procomsearch.parser.Exp : exp1
+  com.example.procomsearch.parser.OrExp o-- com.example.procomsearch.parser.Exp : exp2
+  com.example.procomsearch.parser.Parser o-- com.example.procomsearch.tokenizer.Tokenizer : _tokenizer
+  com.example.procomsearch.parser.Smaller_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Smaller_Exp o-- com.example.procomsearch.parser.Exp : Dou
+  com.example.procomsearch.parser.Smaller_Exp o-- com.example.procomsearch.parser.Exp : term
+  com.example.procomsearch.parser.Unknown_Exp -up-|> com.example.procomsearch.parser.Exp
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

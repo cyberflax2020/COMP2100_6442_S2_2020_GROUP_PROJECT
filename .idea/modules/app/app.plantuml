@@ -1,0 +1,387 @@
+@startuml
+
+title __PROCOM_SEARCH.APP's Class Diagram__\n
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.Company {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.CompanyAdapter {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.CompanyFactory {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.CompanyPageActivity {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.FavoriteAdapter {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.MainActivity_sign_in {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.Page_sign_up {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.SearchActivity {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.SelectActivity {
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace buttonEditText {
+      class com.example.procomsearch.buttonEditText.ClearableEditText {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace dataFrame {
+      class com.example.procomsearch.dataFrame.ArrayListIntent {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace dataFrame {
+      class com.example.procomsearch.dataFrame.BST {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace dataFrame {
+      class com.example.procomsearch.dataFrame.Company_Index {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace dataFrame {
+      class com.example.procomsearch.dataFrame.Database_reader {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace dataFrame {
+      class com.example.procomsearch.dataFrame.Node {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace history {
+      class com.example.procomsearch.history.HistoryUtil {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace layoutManagerTool {
+      class com.example.procomsearch.layoutManagerTool.AutoPageUpLinearLayoutManager {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.And_Exp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Attribute_Exp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Bigger_Exp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Dou_Exp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Equal_Exp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      abstract class com.example.procomsearch.parser.Exp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.NotExp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.OrExp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Parser {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Smaller_Exp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.UnknownRst {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace parser {
+      class com.example.procomsearch.parser.Unknown_Exp {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace searcher {
+      class com.example.procomsearch.searcher.Searcher {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace tokenizer {
+      class com.example.procomsearch.tokenizer.Token {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace tokenizer {
+      class com.example.procomsearch.tokenizer.Tokenizer {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace ui.Favorite {
+      class com.example.procomsearch.ui.Favorite.FavoriteFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace ui.Favorite {
+      class com.example.procomsearch.ui.Favorite.FavoriteViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace ui.Profile {
+      class com.example.procomsearch.ui.Profile.ProfileFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace ui.Profile {
+      class com.example.procomsearch.ui.Profile.ProfileViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace ui.Search {
+      class com.example.procomsearch.ui.Search.SearchFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace ui.Search {
+      class com.example.procomsearch.ui.Search.SearchViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    namespace userDatabase {
+      class com.example.procomsearch.userDatabase.MyDatabaseHelper {
+      }
+    }
+  }
+  
+
+  com.example.procomsearch.Company .up.|> java.io.Serializable
+  com.example.procomsearch.CompanyAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.procomsearch.CompanyAdapter o-- com.example.procomsearch.CompanyFactory : companies
+  com.example.procomsearch.CompanyFactory .up.|> java.io.Serializable
+  com.example.procomsearch.CompanyFactory -up-|> java.util.ArrayList
+  com.example.procomsearch.CompanyPageActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.CompanyPageActivity o-- com.example.procomsearch.dataFrame.ArrayListIntent : AI
+  com.example.procomsearch.FavoriteAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.procomsearch.FavoriteAdapter o-- com.example.procomsearch.CompanyFactory : favoriteCompanies
+  com.example.procomsearch.MainActivity_sign_in -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.MainActivity_sign_in o-- com.example.procomsearch.userDatabase.MyDatabaseHelper : dbHelper
+  com.example.procomsearch.Page_sign_up -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.SearchActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.SearchActivity o-- com.example.procomsearch.dataFrame.ArrayListIntent : AI
+  com.example.procomsearch.SelectActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.buttonEditText.ClearableEditText .up.|> android.text.TextWatcher
+  com.example.procomsearch.buttonEditText.ClearableEditText .up.|> android.view.View.OnFocusChangeListener
+  com.example.procomsearch.buttonEditText.ClearableEditText .up.|> android.view.View.OnTouchListener
+  com.example.procomsearch.buttonEditText.ClearableEditText -up-|> androidx.appcompat.widget.AppCompatEditText
+  com.example.procomsearch.dataFrame.ArrayListIntent .up.|> java.io.Serializable
+  com.example.procomsearch.dataFrame.BST o-- com.example.procomsearch.dataFrame.Node : root
+  com.example.procomsearch.dataFrame.Company_Index .up.|> java.io.Serializable
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : FET
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : MET
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : NPAT
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : NPGT
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : OET
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : OPT
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : PROMT
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : SET
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : TOET
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : TOIAT
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : TOIGT
+  com.example.procomsearch.dataFrame.Database_reader o-- com.example.procomsearch.dataFrame.BST : TPT
+  com.example.procomsearch.dataFrame.Node o-- com.example.procomsearch.dataFrame.Node : left
+  com.example.procomsearch.dataFrame.Node o-- com.example.procomsearch.dataFrame.Node : parent
+  com.example.procomsearch.dataFrame.Node o-- com.example.procomsearch.dataFrame.Node : right
+  com.example.procomsearch.layoutManagerTool.AutoPageUpLinearLayoutManager -up-|> androidx.recyclerview.widget.LinearLayoutManager
+  com.example.procomsearch.parser.And_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.And_Exp o-- com.example.procomsearch.parser.Exp : exp
+  com.example.procomsearch.parser.And_Exp o-- com.example.procomsearch.parser.Exp : term
+  com.example.procomsearch.parser.Attribute_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Bigger_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Bigger_Exp o-- com.example.procomsearch.parser.Exp : Dou
+  com.example.procomsearch.parser.Bigger_Exp o-- com.example.procomsearch.parser.Exp : term
+  com.example.procomsearch.parser.Dou_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Equal_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Equal_Exp o-- com.example.procomsearch.parser.Exp : Dou
+  com.example.procomsearch.parser.Equal_Exp o-- com.example.procomsearch.parser.Exp : term
+  com.example.procomsearch.parser.NotExp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.NotExp o-- com.example.procomsearch.parser.Exp : exp
+  com.example.procomsearch.parser.OrExp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.OrExp o-- com.example.procomsearch.parser.Exp : exp1
+  com.example.procomsearch.parser.OrExp o-- com.example.procomsearch.parser.Exp : exp2
+  com.example.procomsearch.parser.Parser o-- com.example.procomsearch.tokenizer.Tokenizer : _tokenizer
+  com.example.procomsearch.parser.Smaller_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.parser.Smaller_Exp o-- com.example.procomsearch.parser.Exp : Dou
+  com.example.procomsearch.parser.Smaller_Exp o-- com.example.procomsearch.parser.Exp : term
+  com.example.procomsearch.parser.Unknown_Exp -up-|> com.example.procomsearch.parser.Exp
+  com.example.procomsearch.tokenizer.Token o-- com.example.procomsearch.tokenizer.Token.Type : _type
+  com.example.procomsearch.tokenizer.Tokenizer o-- com.example.procomsearch.tokenizer.Token : currentToken
+  com.example.procomsearch.ui.Favorite.FavoriteFragment -up-|> androidx.fragment.app.Fragment
+  com.example.procomsearch.ui.Favorite.FavoriteFragment o-- com.example.procomsearch.ui.Favorite.FavoriteViewModel : favoriteViewModel
+  com.example.procomsearch.ui.Favorite.FavoriteViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.procomsearch.ui.Profile.ProfileFragment -up-|> androidx.fragment.app.Fragment
+  com.example.procomsearch.ui.Profile.ProfileFragment o-- com.example.procomsearch.CompanyAdapter : adapter
+  com.example.procomsearch.ui.Profile.ProfileFragment o-- com.example.procomsearch.ui.Profile.ProfileViewModel : profileViewModel
+  com.example.procomsearch.ui.Profile.ProfileViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.procomsearch.ui.Search.SearchFragment -up-|> androidx.fragment.app.Fragment
+  com.example.procomsearch.ui.Search.SearchFragment o-- com.example.procomsearch.buttonEditText.ClearableEditText : searchBox
+  com.example.procomsearch.ui.Search.SearchFragment o-- com.example.procomsearch.ui.Search.SearchViewModel : searchViewModel
+  com.example.procomsearch.ui.Search.SearchViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.procomsearch.userDatabase.MyDatabaseHelper -up-|> android.database.sqlite.SQLiteOpenHelper
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

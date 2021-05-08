@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item
+            android:id="@+id/rankby"
+            android:title="Rank By:"
+            app:showAsAction="never"/>
+    </group>
+
+    <group>
+
+        <item
+            android:id="@+id/rank_npa"
+            android:title="NPA (default)"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_npg"
+            android:title="NPG"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_toia"
+            android:title="TOIA"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_toig"
+            android:title="TOIG"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_oe"
+            android:title="OE"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_se"
+            android:title="SE"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_me"
+            android:title="ME"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_fe"
+            android:title="FE"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_toe"
+            android:title="TOE"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_op"
+            android:title="OP"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/rank_tp"
+            android:title="TP"
+            app:showAsAction="never" />
+    </group>
+
+</menu>

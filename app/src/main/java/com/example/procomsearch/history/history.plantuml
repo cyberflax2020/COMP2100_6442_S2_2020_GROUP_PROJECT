@@ -1,0 +1,27 @@
+@startuml
+
+title __HISTORY's Class Diagram__\n
+
+  namespace com.example.procomsearch {
+    namespace history {
+      class com.example.procomsearch.history.HistoryUtil {
+          {static} - db : SQLiteDatabase
+          {static} - history : CompanyFactory
+          {static} - searchHistories : ArrayList<String>
+          {static} + addHistory()
+          {static} + addSearchHistory()
+          {static} + clearHistory()
+          {static} + getHistory()
+          {static} + getSearchHistories()
+          {static} + initUtil()
+          {static} + readFromDatabase()
+          {static} + readFromSearchHistory()
+          {static} + writeToDatabase()
+          {static} - checkCompanyIsInDatabase()
+          {static} - checkRedundant()
+          {static} - inputSearchInDatabase()
+      }
+    }
+  }
+
+@enduml

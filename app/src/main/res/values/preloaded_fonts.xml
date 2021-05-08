@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/advent_pro_semibold</item>
+        <item>@font/arizonia</item>
+        <item>@font/autour_one</item>
+        <item>@font/bigshot_one</item>
+        <item>@font/bitter</item>
+        <item>@font/cutive</item>
+    </array>
+</resources>

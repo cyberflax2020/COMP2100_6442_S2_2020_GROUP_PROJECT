@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Search.SearchFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.Search.SearchFragment"
+        android:background="@drawable/background">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_search"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#6D000000"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetStart="0dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title=" "
+            app:titleTextColor="#FFFFFF">
+
+            <ImageButton
+                android:id="@+id/keyboard"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="10dp"
+                android:background="?android:attr/panelBackground"
+                android:scaleType="fitCenter"
+                android:src="@drawable/keyboardddd"
+                tools:layout_editor_absoluteY="7dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cutive"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="#DA9EB8"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="12dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/button"
+            android:text="Search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_text" />
+
+        <com.example.procomsearch.buttonEditText.ClearableEditText
+            android:id="@+id/search_text"
+            android:layout_width="388dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/selector_edit_frame"
+            android:ems="10"
+            android:gravity="fill|fill_vertical"
+            android:hint="Please input queries"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:scrollHorizontally="true"
+
+            android:singleLine="false"
+            android:textColor="#7D00AA"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_search"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/autoinput_btn" />
+
+        <ImageButton
+            android:id="@+id/autoinput_btn"
+            android:layout_width="412dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/panelBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/timg"
+            android:text="See the most profitable companies Now!"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/promoted_coms"
+            android:layout_width="374dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="36dp"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            app:layout_constraintVertical_bias="0.78" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/bigshot_one"
+            android:text="You may be interested in:"
+            android:textColor="#EAE08C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/promoted_coms"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_text"
+            app:layout_constraintVertical_bias="0.64" />
+
+        <ImageButton
+            android:id="@+id/hint_button"
+            android:layout_width="35dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:background="?android:attr/panelBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/hint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_search" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#00FFFFFF"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="#EEFDDE8D"
+            android:gravity="center_vertical"
+            android:text="  Quick input"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="#70FFFFFF"
+
+            app:insetForeground="@android:color/transparent"
+            app:menu="@menu/menu_layout" >
+
+
+        </com.google.android.material.navigation.NavigationView>
+
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,215 @@
+@startuml
+
+title __PROCOMSEARCH's Class Diagram__\n
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.Company {
+        + liked : boolean
+        - image_id : int
+        - name : String
+        - promoted : double
+        - stockNo : String
+        + Company()
+        + equals()
+        + getImage_id()
+        + getName()
+        + getPromoted()
+        + getStockNo()
+        + hashCode()
+        + setName()
+        + toString()
+        - setImage()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.CompanyAdapter {
+        ~ rankAttr : String
+        - companiesRank : ArrayList<String>
+        - proPowerList : ArrayList<Double>
+        - userId : int
+        + CompanyAdapter()
+        + getItemCount()
+        + onBindViewHolder()
+        + onCreateViewHolder()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.CompanyAdapter.ViewHolder {
+        ~ companyIcon : ImageView
+        ~ companyName : TextView
+        ~ companyRankAttr : TextView
+        ~ companyView : View
+        ~ company_stockNo : TextView
+        ~ promoted : ImageView
+        + ViewHolder()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.CompanyFactory {
+        + add()
+        + contains()
+        + count()
+        + get()
+        + remove()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.CompanyPageActivity {
+        ~ companyName : TextView
+        ~ db : SQLiteDatabase
+        ~ feValue : TextView
+        ~ imageView : ImageView
+        ~ like : ImageButton
+        ~ meValue : TextView
+        ~ npaValue : TextView
+        ~ npgValue : TextView
+        ~ oeValue : TextView
+        ~ opValue : TextView
+        ~ promotedvalue : TextView
+        ~ seValue : TextView
+        ~ stockNo : TextView
+        ~ toeValue : TextView
+        ~ toiaValue : TextView
+        ~ toigValue : TextView
+        ~ tpValue : TextView
+        - imageId : int
+        - strCompanyName : String
+        - strStockNo : String
+        - userId : int
+        + CompanyInformation()
+        + Promoted_or_not()
+        # onCreate()
+        - addToFavoriteDatabase()
+        - favoriteIsInDatabase()
+        - removeFromFavoriteDatabase()
+        - warningDialog()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.FavoriteAdapter {
+        - userId : int
+        + FavoriteAdapter()
+        + getItemCount()
+        + onBindViewHolder()
+        + onCreateViewHolder()
+        - removeFavoriteFromDatabase()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.FavoriteAdapter.ViewHolder {
+        ~ companyIcon : ImageView
+        ~ companyName : TextView
+        ~ companyView : View
+        ~ likeIcon : ImageView
+        + ViewHolder()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.MainActivity_sign_in {
+        ~ db : SQLiteDatabase
+        ~ enterWithout : String
+        ~ enterWithoutSignIn : TextView
+        ~ forgetPass : String
+        ~ forgetPassword : TextView
+        ~ inputPassword : String
+        ~ inputUsername : String
+        ~ signInPasswordView : EditText
+        ~ signInUsernameView : EditText
+        ~ userId : int
+        - hintAnswer : String
+        - hintQuestion : String
+        - userName : String
+        + runDatabaseReader()
+        # onCreate()
+        - checkUserInfo()
+        - hintDialog()
+        - iniDatabaseReader()
+        - resetPasswordDialog()
+        - setTextViewClick()
+        - updateDatabase()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.Page_sign_up {
+        ~ db : SQLiteDatabase
+        {static} - hintAnswer : String
+        - hintAnswerView : EditText
+        {static} - hintQuestion : String
+        - hintQuestionView : EditText
+        - nameView : EditText
+        {static} - password1 : String
+        - password1View : EditText
+        {static} - password2 : String
+        - password2View : EditText
+        {static} - username : String
+        # onCreate()
+        - showListPopupWindow()
+        - usernameIsInDatabase()
+        - writeUserToDatabase()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.SearchActivity {
+        {static} ~ companies : CompanyFactory
+        {static} ~ proPowerList : ArrayList<Double>
+        {static} ~ rankAttr : ArrayList<String>
+        ~ rankAttribute : String
+        - inputSearch : String
+        - userId : int
+        # onCreate()
+        - initCompanies()
+    }
+  }
+  
+
+  namespace com.example.procomsearch {
+    class com.example.procomsearch.SelectActivity {
+        {static} - userId : int
+        + getuserid()
+        # onCreate()
+    }
+  }
+  
+
+  com.example.procomsearch.Company .up.|> java.io.Serializable
+  com.example.procomsearch.CompanyAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.procomsearch.CompanyAdapter o-- com.example.procomsearch.CompanyFactory : companies
+  com.example.procomsearch.CompanyAdapter +-down- com.example.procomsearch.CompanyAdapter.ViewHolder
+  com.example.procomsearch.CompanyAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.procomsearch.CompanyFactory .up.|> java.io.Serializable
+  com.example.procomsearch.CompanyFactory -up-|> java.util.ArrayList
+  com.example.procomsearch.CompanyPageActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.CompanyPageActivity o-- com.example.procomsearch.dataFrame.ArrayListIntent : AI
+  com.example.procomsearch.FavoriteAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.procomsearch.FavoriteAdapter o-- com.example.procomsearch.CompanyFactory : favoriteCompanies
+  com.example.procomsearch.FavoriteAdapter +-down- com.example.procomsearch.FavoriteAdapter.ViewHolder
+  com.example.procomsearch.FavoriteAdapter.ViewHolder -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.procomsearch.MainActivity_sign_in -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.MainActivity_sign_in o-- com.example.procomsearch.userDatabase.MyDatabaseHelper : dbHelper
+  com.example.procomsearch.Page_sign_up -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.SearchActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.procomsearch.SearchActivity o-- com.example.procomsearch.dataFrame.ArrayListIntent : AI
+  com.example.procomsearch.SelectActivity -up-|> androidx.appcompat.app.AppCompatActivity
+
+
+
+
+@enduml

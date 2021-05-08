@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+        <item
+            android:id="@+id/npg_btn"
+            android:title="Net Profit Growth" />
+        <item
+            android:id="@+id/npa_btn"
+            android:title="Net Profit Amount" />
+        <item
+            android:id="@+id/toia_btn"
+            android:title="Total Operating Income Amount" />
+        <item
+            android:id="@+id/toig_btn"
+            android:title="Total Operating Income Growth" />
+        <item
+            android:id="@+id/se_btn"
+            android:title="Sale Expenses" />
+        <item
+            android:id="@+id/me_btn"
+            android:title="Management Expense" />
+        <item
+            android:id="@+id/fe_btn"
+            android:title="Financial Expenses" />
+        <item
+            android:id="@+id/op_btn"
+            android:title="Operating Profit" />
+        <item
+            android:id="@+id/toe_btn"
+            android:title="Total Operation Expenses" />
+        <item
+            android:id="@+id/tp_btn"
+            android:title="Total Profit" />
+        <item
+            android:id="@+id/simbols_btn"
+            android:title="Simbols"
+            app:actionLayout = "@layout/anchor"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/backspace_btn"
+            android:title="Backspace"
+            />
+        <item
+            android:id="@+id/digit_btn"
+            android:title="Digits"
+            app:actionLayout = "@layout/anchor"/>
+    </group>
+
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/left_pre"
+            android:title="(" />
+        <item
+            android:id="@+id/right_pre"
+            android:title=")"/>
+        <item
+            android:id="@+id/equal"
+            android:title="="/>
+        <item
+            android:id="@+id/bigger"
+            android:title="&gt;"/>
+        <item
+            android:id="@+id/smaller"
+            android:title="&lt;"/>
+        <item
+            android:id="@+id/and"
+            android:title="&amp;"/>
+        <item
+            android:id="@+id/or"
+            android:title="|"/>
+        <item
+            android:id="@+id/not"
+            android:title="!"/>
+
+</menu>

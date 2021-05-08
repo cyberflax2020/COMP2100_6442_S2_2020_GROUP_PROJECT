@@ -1,0 +1,30 @@
+# for information & examples on how to fill this out correctly, see
+# https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality
+
+declaration: >-
+  I declare that everything I have submitted in this assignment is entirely my
+  own work, with the following exceptions:
+
+
+# add as many "name+comment" entries as necessary
+# (or remove it altogether if you haven't collaborated with anyone)
+collaboration:
+  - name: Yuchen Wang
+    comment:Participate in the implementation of the latter algorithm, Parser, Tokenizer and Test. Connect the front and back ends of the APP. Help beautify UI design and document writing.
+  - name: Chaofan Li
+    comment:
+      Main front-end design, main document writing, UI design, UI control debugging, APP front-end and back-end docking, implementation of SQL database for user information
+
+
+# add as many "url+licence+comment" entries as necessary
+# (or remove it altogether if you haven't used any external code)
+code:
+  - comment: Part of my code in the Tokenizer, Parser and BST is inspired by the Lab Code.
+    url: https://gitlab.cecs.anu.edu.au/u6462980/comp2100_6442_s2_2020.git
+    licence: --
+
+
+
+# sign *your* name and uid here
+name: Yuliang Ma
+uid: u6462980

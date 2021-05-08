@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/zero_btn"
+        android:title="0" />
+    <item
+        android:id="@+id/one_btn"
+        android:title="1"/>
+    <item
+        android:id="@+id/two_btn"
+        android:title="2"/>
+    <item
+        android:id="@+id/three_btn"
+        android:title="3"/>
+    <item
+        android:id="@+id/four_btn"
+        android:title="4"/>
+    <item
+        android:id="@+id/five_btn"
+        android:title="5"/>
+    <item
+        android:id="@+id/six_btn"
+        android:title="6"/>
+    <item
+        android:id="@+id/seven_btn"
+        android:title="7"/>
+    <item
+        android:id="@+id/eight_btn"
+        android:title="8"/>
+    <item
+        android:id="@+id/nine_btn"
+        android:title="9"/>
+
+</menu>

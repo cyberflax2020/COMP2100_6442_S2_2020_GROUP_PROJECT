@@ -1,0 +1,22 @@
+# for information & examples on how to fill this out correctly, see
+# https://cs.anu.edu.au/courses/comp1720/resources/faq/#statement-of-originality
+
+declaration: >-
+  I declare that everything I have submitted in this assignment is entirely my
+  own work, with the following exceptions:
+
+
+# add as many "name+comment" entries as necessary
+# (or remove it altogether if you haven't collaborated with anyone)
+collaboration:
+  - name: Yuliang Ma
+    comment: >-
+    Yuliang Ma helped me correct some errors in Tokenizer, and we wrote the DatabaseReader together.
+  - name: ChaoFan Li
+    comment: >-
+    ChaoFan Li set the layout of 2 pages I created, and he painted the background of the pages.
+
+
+# sign *your* name and uid here
+name: Yuchen Wang
+uid: u6928271
